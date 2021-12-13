@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Calculadora HTML,CSS,JS</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<section id="baseP" class="base-p">
+		<h2>Calcule aqui!</h2>
+
+		<p id="display-r" class="display"></p>
+
+		<table>
+			<tr>
+				<td><button onclick="insert('+')">+</button></td>
+				<td><button onclick="insert('-')">-</button></td>
+				<td><button onclick="clean()">C</button></td>
+				<td><button onclick="back()"><<</button></td>
+
+			</tr>
+
+			<tr>
+				<td><button onclick="insert('7')">7</button></td>
+				<td><button onclick="insert('8')">8</button></td>
+				<td><button onclick="insert('9')">9</button></td>
+				<td><button onclick="insert('/')">/</button></td>
+
+			</tr>
+
+			<tr>
+				<td><button onclick="insert('4')">4</button></td>
+				<td><button onclick="insert('5')">5</button></td>
+				<td><button onclick="insert('6')">6</button></td>
+				<td><button onclick="insert('*')">x</button></td>
+
+			</tr>
+
+			<tr>
+				<td><button onclick="insert('1')">1</button></td>
+				<td><button onclick="insert('2')">2</button></td>
+				<td><button onclick="insert('3')">3</button></td>
+				<td  class="result" rowspan="2"><button onclick="calc()" style="height:112px;">=</button></td>
+
+			</tr>
+
+			<tr>
+				<td colspan="2"><button onclick="insert('0')" style="width:112px;">0</button></td>
+				<td><button>.</button></td>
+				
+			</tr>
+		
+		</table>
+
+	</section>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
